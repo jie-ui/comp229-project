@@ -1,4 +1,6 @@
-COMP229 – Convenience Store Backend
+
+## COMP229 – Convenience Store Backend
+
 
 A minimal but complete backend application implementing Authentication, Product Management, and Order Management with Ownership Guard, designed for COMP229 coursework.
 
@@ -13,6 +15,7 @@ Environment	.env configurable (JWT_SECRET, Mongo URI, Admin Email)
 
 ## Technologies Used
 
+
 Node.js + Express
 
 MongoDB + Mongoose
@@ -22,8 +25,8 @@ JWT Authentication
 Bcrypt Password Hashing
 
 Morgan Logger
-
 CORS
+
 
 ## Getting Started
 ```bash
@@ -58,3 +61,9 @@ Harsh Katariy – Authentication
 Nijanthan Saravanapavan – QA
 
 Abdullah Zafar – EDD, Video & Presentation
+
+
+
+
+
+

@@ -25,7 +25,9 @@ Morgan Logger
 
 CORS
 
-##Getting Started
+## Getting Started
+```bash
+# 1. Clone
 # 1. Clone the repository
 git clone https://github.com/jie-ui/comp229-project.git
 cd comp229-project

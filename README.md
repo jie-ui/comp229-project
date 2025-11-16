@@ -27,7 +27,7 @@ CORS
 
 ## Getting Started
 ```bash
-# 1. Clone
+
 # 1. Clone the repository
 git clone https://github.com/jie-ui/comp229-project.git
 cd comp229-project
@@ -44,7 +44,7 @@ MONGODB_URI=your_mongo_uri_here
 # 4. Start the server
 npm run dev
 
-
+```bash
 The server will run at: http://localhost:4000
 
 ## Team

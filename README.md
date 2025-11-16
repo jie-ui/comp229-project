@@ -55,9 +55,7 @@ MONGODB_URI=your_mongo_uri_here
 npm run dev
 The server will run at: http://localhost:4000
 
-
-
-# Team
+## Team
 
 This project was built by the Team 229 as part of Centennial College coursework:
 
@@ -68,3 +66,6 @@ Harsh Katariy – Authentication
 Nijanthan Saravanapavan – QA
 
 Abdullah Zafar – EDD, Video & Presentation
+
+
+

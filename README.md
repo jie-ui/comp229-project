@@ -25,12 +25,7 @@ Morgan Logger
 
 CORS
 
-## Getting Started
-
-
-
-```bash
-
+##Getting Started
 # 1. Clone the repository
 git clone https://github.com/jie-ui/comp229-project.git
 cd comp229-project
@@ -48,12 +43,7 @@ MONGODB_URI=your_mongo_uri_here
 npm run dev
 
 
-
-
 The server will run at: http://localhost:4000
-
-
-
 
 ## Team
 
@@ -66,5 +56,3 @@ Harsh Katariy – Authentication
 Nijanthan Saravanapavan – QA
 
 Abdullah Zafar – EDD, Video & Presentation
-
----

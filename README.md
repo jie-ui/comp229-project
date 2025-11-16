@@ -24,3 +24,26 @@ Bcrypt Password Hashing
 Morgan Logger
 
 CORS
+
+
+# Getting Started
+1. Clone the repository
+git clone https://github.com/jie-ui/comp229-project .git
+cd comp229-project
+
+2. Install dependencies
+npm install
+
+3. Setup .env file
+
+Create a .env file and configure your Mongo URI and JWT secret as shown above.
+
+4. Run the server
+npm run dev
+
+
+The server will start on http://localhost:4000.
+
+# Team
+
+This project was created as part of the COMP229 coursework at Centennial College.

@@ -1,15 +1,24 @@
-# COMP229 – Convenience Store Backend (Node.js + Express + MongoDB)
+##  Project Overview
 
-A minimal but complete backend application implementing Authentication, Product Management, and Order Management with Ownership Guard, designed for COMP229 (Enterprise Development) coursework.
+COMP229 – Convenience Store Backend (Node.js + Express + MongoDB)
 
-# Features
-Module	Description
-Auth	Register, Login, and Get Current User (/api/auth)
-Products	Full CRUD with Admin-only protection (/api/products)
-Orders	Core Entity with user ownership guard (/api/orders)
-Middleware	JWT authentication, admin-only routes, ownership guard, and unified error handling
-Database	MongoDB with Mongoose ODM
-Environment	.env configurable (JWT secret, Mongo URI, admin email)
+A minimal yet complete backend application implementing:
+- **Authentication**
+- **Product Management**
+- **Order Management (with Ownership Guard)**
+
+Designed as part of the COMP229 (Enterprise Development) coursework at **Centennial College**.
+
+##  Key Features
+
+| Module       | Description |
+|--------------|-------------|
+| Auth         | Register, Login, and Get Current User (`/api/auth`) |
+| Products     | Full CRUD with Admin-only protection (`/api/products`) |
+| Orders       | Core Entity with user ownership guard (`/api/orders`) |
+| Middleware   | JWT auth, admin-only routes, ownership guard, unified error handling |
+| Database     | MongoDB + Mongoose ODM |
+| Environment  | `.env` configurable (JWT_SECRET, Mongo URI, admin email) |
 
 # Technologies Used
 
@@ -26,24 +35,36 @@ Morgan Logger
 CORS
 
 
-# Getting Started
-1. Clone the repository
-git clone https://github.com/jie-ui/comp229-project .git
+##  Getting Started
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/jie-ui/comp229-project.git
 cd comp229-project
 
-2. Install dependencies
+# 2. Install dependencies
 npm install
 
-3. Setup .env file
+# 3. Setup `.env`
+Create a `.env` file and configure:
+PORT=4000  
+JWT_SECRET=your_secret_here  
+MONGODB_URI=your_mongo_uri_here
 
-Create a .env file and configure your Mongo URI and JWT secret as shown above.
-
-4. Run the server
+# 4. Start the server
 npm run dev
+The server will run at: http://localhost:4000
 
 
-The server will start on http://localhost:4000.
 
 # Team
 
-This project was created as part of the COMP229 coursework at Centennial College.
+This project was built by the Team 229 as part of Centennial College coursework:
+
+Jie Yang – Product & Order Routes
+
+Harsh Katariy – Authentication
+
+Nijanthan Saravanapavan – QA
+
+Abdullah Zafar – EDD, Video & Presentation

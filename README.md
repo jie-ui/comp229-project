@@ -26,22 +26,23 @@ Morgan Logger
 CORS
 
 ## Getting Started
-1. Clone the Repository
+
+
+```bash
+# 1. Clone the repository
 git clone https://github.com/jie-ui/comp229-project.git
 cd comp229-project
 
-2. Install Dependencies
+# 2. Install dependencies
 npm install
 
-3. Setup .env
-
-Create a .env file and configure the following:
-
-PORT=4000
-JWT_SECRET=your_secret_here
+# 3. Setup `.env`
+Create a `.env` file and configure:
+PORT=4000  
+JWT_SECRET=your_secret_here  
 MONGODB_URI=your_mongo_uri_here
 
-4. Start the Server
+# 4. Start the server
 npm run dev
 
 

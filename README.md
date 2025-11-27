@@ -28,35 +28,53 @@ Morgan Logger
 CORS
 
 
-## Getting Started
-```bash
+## How to Run the Project
 
-# 1. Clone the repository
-git clone https://github.com/jie-ui/comp229-project.git
-cd comp229-project
+This project contains frontend (React + Vite) and backend (Node + Express).
 
-# 2. Install dependencies
+Please follow the steps below after cloning the repository.
+
+1.  Clone the project
+git clone <your-repo-link>
+cd COMP229-PROJECT
+
+2.  Install and run the FRONTEND
+cd frontend
 npm install
-
-# 3. Setup `.env`
-Create a `.env` file and configure:
-PORT=4000  
-JWT_SECRET=your_secret_here  
-MONGODB_URI=your_mongo_uri_here
-
-# 4. Start the server
 npm run dev
 
-```
-The server will run at: http://localhost:4000
+
+You should see Vite running on:
+
+http://localhost:5173
+
+3.  Install and run the BACKEND
+cd ../server
+npm install
+npm run dev
+
+
+Backend will run at:
+
+http://localhost:5000
+
+4. 🔧 Environment Variables
+
+Create a .env file inside /server.
+
+Example:
+
+MONGO_URI=mongodb+srv://...
+JWT_SECRET=xxxx
+PORT=3000
 
 ## Team
 
 This project was built by Team 229 as part of Centennial College COMP229 coursework:
 
-Jie Yang – Product & Order Routes
+Jie Yang – Product & Order Routes/BANKEND
 
-Harsh Katariy – Authentication
+Harsh Katariy – Authentication/FRONTEND
 
 Nijanthan Saravanapavan – QA
 

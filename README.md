@@ -58,7 +58,7 @@ Backend will run at:
 
 http://localhost:5000
 
-4. 🔧 Environment Variables
+4.  Environment Variables
 
 Create a .env file inside /server.
 

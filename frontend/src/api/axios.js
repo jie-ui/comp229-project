@@ -11,57 +11,64 @@ const instance = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
-
+// ------------ Attach token ------------
 instance.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
-
+// ------------ Response Interceptor ------------
 instance.interceptors.response.use(
   (resp) => {
     const body = resp.data;
 
-   
+    // Standard backend wrapper: { ok, data, error }
     if (typeof body === "object" && "ok" in body) {
       if (body.ok) return body.data;
 
-      // backend error
       return Promise.reject({
         response: { data: { message: body.error || "Server error" } },
       });
     }
 
-    // fallback
     return body;
   },
 
   (error) => {
-    // network error
+    // No server response → network error
     if (!error.response) {
       return Promise.reject({
         response: { data: { message: "Network error" } },
       });
     }
 
-    const status = error.response.status;
+    const { status } = error.response;
 
-    // Unauthorized
+    // ----------- 401 Handling (IMPORTANT!) -------------
     if (status === 401) {
-      localStorage.removeItem("token");
-      window.location.href = "/login";
-      return;
+      const token = localStorage.getItem("token");
+
+      // If there IS a token → expired session → logout + redirect
+      if (token) {
+        localStorage.removeItem("token");
+        window.location.href = "/login";
+        return;
+      }
+
+      // If NO token (login page wrong password) → pass error to UI
+      return Promise.reject({
+        response: { data: { message: "Invalid email or password" } },
+      });
     }
 
-    // Extract backend message
+    // ----------- Other errors -------------
     const payload = error.response.data;
     const message =
-      (payload && (payload.error || payload.message)) || "Request Failed";
+      payload?.error || payload?.message || "Request Failed";
 
     return Promise.reject({ response: { data: { message } } });
   }
 );
 
 export default instance;
-

@@ -9,7 +9,11 @@ import authRoutes from "./routes/auth.routes.js";
 import { notFound, errorHandler } from "./middleware/error.js";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://comp229-project.vercel.app/"],
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(morgan("dev"));
 

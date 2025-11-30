@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Order from "../models/Order.js";
+import Order from "../models/order.js";
 
 export async function loadOrderIfOwner(req, res, next) {
   const { id } = req.params;

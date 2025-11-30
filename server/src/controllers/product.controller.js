@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Product from "../models/Product.js";
+import Product from "../models/product.js";
 export const createProduct = async (req, res) => {
   try {
     const p = await Product.create(req.body);

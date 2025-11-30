@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import Order from "../models/Order.js";
-import Product from "../models/Product.js";
+import Order from "../models/order.js";
+import Product from "../models/product.js";
 
 // helper: build items with priceAtPurchase and compute total
 async function buildItemsAndTotal(items) {

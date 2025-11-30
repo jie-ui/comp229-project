@@ -2,8 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
- "main": "server/src/server.js",
-   "scripts": {
+  "main": "server/src/server.js",
+  "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "both": "concurrently \"npm run dev\" \"npm run dev --prefix ../frontend\""

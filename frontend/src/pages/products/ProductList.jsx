@@ -52,6 +52,10 @@ export default function ProductList() {
       <Typography variant="h4" sx={{ mb: 3 }}>
         Products
       </Typography>
+      {/* CI/CD Test Update */}
+      <Typography sx={{ mb: 2, color: "gray" }}>
+        This is a CI/CD update test.
+      </Typography>
 
       {/* Filter Section */}
       <Paper sx={{ p: 2, mb: 3, display: "flex", gap: 2, alignItems: "center" }}>
